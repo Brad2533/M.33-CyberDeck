@@ -49,7 +49,7 @@ The battery is the riskiest part of this build. Options so far:
 
 - **USB-C power bank or battery HAT.** Must supply enough current for the board plus USB devices. Underpowered setups cause random crashes.
 - **Built-in BMS and protection.** Use a pack with a battery management system and a fuse or protection circuit.
-- **Flight limits.** Airlines usually cap carry-on lithium batteries at 100 Wh, with some allowing up to 160 Wh with approval. Check the watt-hour rating printed on the pack.
+- **Flight limits.** Airlines usually cap carry-on lithium batteries at 100 Wh, with some allowing up to 160 Wh with approval. Check the watt-hour rating printed on the pack. The deck is planned for car and bike use, not flying, so this cap applies only if that changes. See `CASE_SPEC.md` for the battery size target.
 
 Open: target runtime (hours with the lid closed), which decides the pack's watt-hour size. Battery pack and capacity are not yet chosen.
 
@@ -83,6 +83,8 @@ Two routes are on the table. The hard shell is the easier starting point.
 - **Cyberdeck design:** start from existing Printables or Thingiverse designs, then adjust in Tinkercad if needed.
 
 Open: pick the shell model after the board and battery sizes are fixed.
+
+Detailed case design (two compartments, battery bay, vent and fan, mounting, antennas): see [CASE_SPEC.md](CASE_SPEC.md).
 
 ## Software
 
