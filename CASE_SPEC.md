@@ -16,8 +16,8 @@ As of 2026-11-09. Shared by both builds (`BUILD_PLAN.md` for the Pi, `MINI_PC_PL
 - Mini PC build uses the bare board: the mini PC shell is removed and only the board, heatsink, fan, RAM and SSD are used. Mount the board on standoffs in a rear strip behind the keyboard, with the exhaust at the back.
 - Heat: spread it out. Keep the main heat behind the keys, add an air gap and heat shield under the keyboard, and keep the converter and USB hub away from the board.
 - Strip the case's foam. Use rigid mounts only, and no foam near heat or the battery.
-- Orientation on the bag: the lid's outside faces out and the right side (trackball side) faces up, so the back vents point out to the wearer's left. The two lid antennas on the right edge then point at the sky.
-- Pointing device: trackball on the right side of the base with two mouse buttons beside it, clear of the keys. Thumb or finger placement is not decided.
+- Orientation on the bag: the lid's outside faces out and the right side (trackpad side) faces up, so the back vents point out to the wearer's left. The two lid antennas on the right edge then point at the sky.
+- Pointing device: small trackpad on the right side of the base with two mouse buttons beside it, clear of the keys. A trackball is the fallback. Keyboard and trackpad sit in a replaceable top plate, with the keyboard opening cut slightly oversize and a bezel so same-size 60% boards swap over USB.
 
 ## Board and cabling layout
 
@@ -25,11 +25,11 @@ Shown in `images/02-inside-base.png`. Hinge edge is the back.
 
 - Rear strip, left: the bare board on standoffs, its heatsink and fan, the capture adapter and hub, and power in. Exhaust out the back. The board's I/O edge faces the left end.
 - Rear strip, right: the battery bay, behind a wall, with its own membrane vent on the back edge, next to the fan exhaust.
-- Front row: the keyboard zone (60 to 65% board, about 11 in wide) and the trackball with two buttons on the right.
-- Port extenders: only for what is plugged in from outside (power in, one or two USB-A, Ethernet if wanted). They exit the left end. The keyboard, trackball and capture adapter connect inside, so they need no case holes.
+- Front row: the keyboard zone (60 to 65% board, about 11 in wide) and the trackpad with two buttons on the right.
+- Port extenders: only for what is plugged in from outside (power in, one or two USB-A, Ethernet if wanted). They exit the left end. The keyboard, trackpad and capture adapter connect inside, so they need no case holes.
 - Antennas: two short ones on the lid's right edge, not on the body.
 - Across the hinge: one USB-C or HDMI-plus-USB cable to the screen (video, power and touch), plus two thin coax pigtails from the capture adapter to SMA connectors on the lid's right edge. The adapter itself stays in the base.
-- If the keyboard and trackball can share one USB controller, that saves a port and a cable.
+- If the keyboard and pointing device can share one USB controller, that saves a port and a cable.
 
 ## Case candidates
 
@@ -39,7 +39,7 @@ Interior sizes from listings. The sizes below are not yet checked against a real
 | --- | --- | --- | --- |
 | Apache 3800 (Harbor Freight) | 14 7/8 x 10 5/8 in | 6 1/8 in total | Cheapest ($20 to $40 in listings). Deep and heavier. A Pi 4 cyberdeck has been built in one. Plastic is probably polypropylene, which glues poorly, so use screws and backing plates. |
 | Pelican 1470 | about 15.7 x 10.7 in | about 1.47 + 2.4 = 3.87 in | The size wanted. About 4.47 in thick outside and 4.28 lb. Expensive ($185 new), so look used. |
-| Nanuk 910 | 13.2 x 9.2 in | 1.3 + 2.8 = 4.1 in | $75.95. Tight for a 60% keyboard plus the trackball. |
+| Nanuk 910 | 13.2 x 9.2 in | 1.3 + 2.8 = 4.1 in | $75.95. Tight for a 60% keyboard plus the trackpad. |
 | SKB iSeries 1510-4 | 15 x 10.5 in | 1.25 + 3.25 = 4.5 in | IP67, discontinued listing, premium price. |
 | Apache 2800, Seahorse 520, Monoprice 13 x 14 x 7 | Too narrow or too deep | | Not suitable. |
 

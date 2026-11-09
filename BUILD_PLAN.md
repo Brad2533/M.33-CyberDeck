@@ -63,13 +63,13 @@ Open: screen size and whether the keyboard sits inside the case or on top.
 
 **Pointing device (built-in mouse)**
 
-Decision so far: try a cheap USB trackball first, and fall back to a small trackpad if it doesn't work out. Both options stay open. Both connect over USB, so either one swaps in without changing the rest of the build.
+Decision so far (updated): a small USB trackpad on the right side with two mouse buttons beside it, because the deck only travels through rain closed, and a trackpad on the top plate is sealed in when the case is shut. A cheap USB trackball stays as the fallback. Both connect over USB, so either one swaps into the replaceable top plate without changing the rest of the build.
 
-Layout decision: put the trackball on the right side of the base with two mouse buttons beside it, mouse-style, instead of a trackpad in the middle. The right hand stays put, and the middle of the deck stays clear of the wrists. Keep some clearance from the keys so a palm doesn't rest on the ball while typing. Open: whether the ball sits under the thumb or the fingers, which sets where the buttons go.
+Layout decision: put the pointing device on the right side of the base with two mouse buttons beside it, mouse-style, instead of in the middle. The right hand stays put, and the middle of the deck stays clear of the wrists. A small trackpad (about 2.5 to 3 in wide, or a round pad around 35 mm) is narrower than a trackball zone, which gives about 0.5 to 1.5 in more width for the keyboard. Open: which pad to buy and where the buttons go.
 
 | Option | Reliability | Notes |
 | --- | --- | --- |
-| Trackball (optical) | Rugged. Works with gloves or damp hands and holds still on bumpy surfaces. Needs occasional cleaning if grit gets under the ball. | Preferred to try first for bike, car, and outdoor use. Takes a few days to learn. Cover or recess the ball to keep dirt out. |
+| Trackball (optical), fallback | Rugged. Works with gloves or damp hands and holds still on bumpy surfaces. Needs occasional cleaning if grit gets under the ball. | Fallback if the trackpad misbehaves. Works wet, so it suits use with the case open outdoors. Takes a few days to learn. Cover or recess the ball to keep dirt out. |
 | Trackpad | No moving parts, so mechanically reliable. Can misbehave with wet or sweaty fingers or gloves, and a loose mount or electrical noise can cause jumpy cursors. | Familiar and supports gestures. Needs a flat, exposed surface in the case. |
 
 Prices not checked yet. The earlier estimate of $10 to $25 still applies.
@@ -164,8 +164,8 @@ Online print services such as JLCPCB or Craftcloud can print test parts for a fe
 - [ ] Headless capture hub (Pi 4) or laptop-style deck (Pi 5 8 GB)
 - [ ] Confirm the US price of the Pi 5 8 GB
 - [ ] Screen, keyboard, and touchpad choice for the laptop-style deck
-- [ ] Pointing device: try a cheap USB trackball first, fall back to a trackpad
-- [ ] Trackball under the thumb or the fingers (sets the button placement on the right side)
+- [ ] Pointing device: small USB trackpad first, with a trackball as the fallback
+- [ ] Which trackpad to buy (small pad or round pad) and where the two buttons go on the right side
 - [ ] Battery pack: choose capacity from target runtime and check its watt-hour rating
 - [ ] Cooling: fan or passive heatsink, and vent layout
 - [ ] Enclosure: choose the shell and confirm it fits the Pi, hub, and battery

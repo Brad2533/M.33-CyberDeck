@@ -13,8 +13,8 @@ A portable, battery-powered cyberdeck for wireless capture, network security tes
 
 Early concept drawings of the deck. They are close to the intended design, but the board, battery pack, and exact layout are not final.
 
-- `images/01-open.png`: the open deck (screen, keyboard, trackball on the right with two buttons, antennas, corner clips, end vent)
-- `images/02-inside-base.png`: top-down plan of the base (bare board in a rear strip with back exhaust, wall, battery bay, keyboard zone, trackball)
+- `images/01-open.png`: the open deck (screen, keyboard, trackpad on the right with two buttons, antennas, corner clips, end vent)
+- `images/02-inside-base.png`: top-down plan of the base (bare board in a rear strip with back exhaust, wall, battery bay, keyboard zone, trackpad)
 - `images/03-on-bag.png`: closed case clipped to a backpack with a backup strap
 
 The editable design canvas is "M.33 CyberDeck Concept" in Claude. The PNGs are renders of it and use a fallback font.
@@ -34,7 +34,7 @@ Decisions so far:
 - Use case: car, bike, and backpack, not flying, so the 100 Wh airline battery cap does not apply. Battery target is about 150 to 200 Wh.
 - OptiPlex and Lenovo mini PCs need a battery that delivers 90 W or more.
 - Mini PC build: the shell is removed and only the board, heatsink, fan, RAM and SSD are used. Case thinness matters, and the case needs to be easy to cut.
-- Pointing device: try a cheap USB trackball first, with a small trackpad as the fallback. Both stay open. The trackball goes on the right side of the deck with two mouse buttons beside it, not in the middle. Still undecided: thumb or fingers.
+- Pointing device: a small USB trackpad on the right side with two mouse buttons beside it, with a cheap USB trackball as the fallback. The deck only travels through rain closed, so the trackpad is sealed in. The keyboard is a wired USB 60% board in a replaceable top plate.
 - Prices rose through 2026 because of the DRAM shortage. Older estimates in earlier versions were too low.
 
 ## Hardware plan (draft)
