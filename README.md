@@ -14,7 +14,7 @@ A portable, battery-powered cyberdeck for wireless capture, network security tes
 Early concept drawings of the deck. They are close to the intended design, but the board, battery pack, and exact layout are not final.
 
 - `images/01-open.png`: the open deck (screen, keyboard, trackball on the right with two buttons, antennas, corner clips, end vent)
-- `images/02-inside-base.png`: top-down plan of the base (electronics bay, wall, battery bay)
+- `images/02-inside-base.png`: top-down plan of the base (bare board in a rear strip with back exhaust, wall, battery bay, keyboard zone, trackball)
 - `images/03-on-bag.png`: closed case clipped to a backpack with a backup strap
 
 The editable design canvas is "M.33 CyberDeck Concept" in Claude. The PNGs are renders of it and use a fallback font.
