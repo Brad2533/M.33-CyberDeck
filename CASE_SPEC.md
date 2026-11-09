@@ -16,7 +16,7 @@ As of 2026-11-09. Shared by both builds (`BUILD_PLAN.md` for the Pi, `MINI_PC_PL
 - Mini PC build uses the bare board: the mini PC shell is removed and only the board, heatsink, fan, RAM and SSD are used. Mount the board on standoffs in a rear strip behind the keyboard, with the exhaust at the back.
 - Heat: spread it out. Keep the main heat behind the keys, add an air gap and heat shield under the keyboard, and keep the converter and USB hub away from the board.
 - Strip the case's foam. Use rigid mounts only, and no foam near heat or the battery.
-- Orientation on the bag: the lid's outside faces out and the right side (trackball side) faces up, so the back vents point out to the wearer's left.
+- Orientation on the bag: the lid's outside faces out and the right side (trackball side) faces up, so the back vents point out to the wearer's left. The two lid antennas on the right edge then point at the sky.
 - Pointing device: trackball on the right side of the base with two mouse buttons beside it, clear of the keys. Thumb or finger placement is not decided.
 
 ## Board and cabling layout
@@ -24,9 +24,10 @@ As of 2026-11-09. Shared by both builds (`BUILD_PLAN.md` for the Pi, `MINI_PC_PL
 Shown in `images/02-inside-base.png`. Hinge edge is the back.
 
 - Rear strip, left: the bare board on standoffs, its heatsink and fan, the capture adapter and hub, and power in. Exhaust out the back. The board's I/O edge faces the left end.
-- Rear strip, right: the battery bay, behind a wall, with its own membrane vent.
+- Rear strip, right: the battery bay, behind a wall, with its own membrane vent on the back edge, next to the fan exhaust.
 - Front row: the keyboard zone (60 to 65% board, about 11 in wide) and the trackball with two buttons on the right.
 - Port extenders: only for what is plugged in from outside (power in, one or two USB-A, Ethernet if wanted). They exit the left end. The keyboard, trackball and capture adapter connect inside, so they need no case holes.
+- Antennas: two short ones on the lid's right edge, not on the body.
 - Across the hinge: one USB-C or HDMI-plus-USB cable to the screen (video, power and touch), plus two thin coax pigtails from the capture adapter to SMA connectors on the lid's right edge. The adapter itself stays in the base.
 - If the keyboard and trackball can share one USB controller, that saves a port and a cable.
 
