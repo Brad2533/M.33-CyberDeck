@@ -65,6 +65,8 @@ Open: screen size and whether the keyboard sits inside the case or on top.
 
 Decision so far: try a cheap USB trackball first, and fall back to a small trackpad if it doesn't work out. Both options stay open. Both connect over USB, so either one swaps in without changing the rest of the build.
 
+Layout decision: put the trackball on the right side of the base with two mouse buttons beside it, mouse-style, instead of a trackpad in the middle. The right hand stays put, and the middle of the deck stays clear of the wrists. Keep some clearance from the keys so a palm doesn't rest on the ball while typing. Open: whether the ball sits under the thumb or the fingers, which sets where the buttons go.
+
 | Option | Reliability | Notes |
 | --- | --- | --- |
 | Trackball (optical) | Rugged. Works with gloves or damp hands and holds still on bumpy surfaces. Needs occasional cleaning if grit gets under the ball. | Preferred to try first for bike, car, and outdoor use. Takes a few days to learn. Cover or recess the ball to keep dirt out. |
@@ -163,6 +165,7 @@ Online print services such as JLCPCB or Craftcloud can print test parts for a fe
 - [ ] Confirm the US price of the Pi 5 8 GB
 - [ ] Screen, keyboard, and touchpad choice for the laptop-style deck
 - [ ] Pointing device: try a cheap USB trackball first, fall back to a trackpad
+- [ ] Trackball under the thumb or the fingers (sets the button placement on the right side)
 - [ ] Battery pack: choose capacity from target runtime and check its watt-hour rating
 - [ ] Cooling: fan or passive heatsink, and vent layout
 - [ ] Enclosure: choose the shell and confirm it fits the Pi, hub, and battery

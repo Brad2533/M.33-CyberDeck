@@ -94,6 +94,8 @@ Open: screen size and whether the keyboard sits inside the case or on top.
 
 Decision so far: try a cheap USB trackball first, and fall back to a small trackpad if it doesn't work out. Both options stay open. Both connect over USB, so either one swaps in without changing the rest of the build.
 
+Layout decision: put the trackball on the right side of the base with two mouse buttons beside it, mouse-style, instead of a trackpad in the middle. The right hand stays put, and the middle of the deck stays clear of the wrists. Keep some clearance from the keys so a palm doesn't rest on the ball while typing. Open: whether the ball sits under the thumb or the fingers, which sets where the buttons go.
+
 | Option | Reliability | Notes |
 | --- | --- | --- |
 | Trackball (optical) | Rugged. Works with gloves or damp hands and holds still on bumpy surfaces. Needs occasional cleaning if grit gets under the ball. | Preferred to try first for bike, car, and outdoor use. Takes a few days to learn. Cover or recess the ball to keep dirt out. |
@@ -171,6 +173,7 @@ Rough subtotal before battery, case, and capture gear: about $300 to $390 with a
 - [ ] Screen size and layout
 - [ ] Keyboard and touchpad choice
 - [ ] Pointing device: try a cheap USB trackball first, fall back to a trackpad
+- [ ] Trackball under the thumb or the fingers (sets the button placement on the right side)
 - [ ] Battery pack: output voltage, capacity, and watt-hour rating
 - [ ] Cooling: fan layout and vent positions
 - [ ] Case: rugged shell, printed case, or existing cyberdeck design

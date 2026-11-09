@@ -13,6 +13,7 @@ As of 2026-11-09. Shared by both builds (`BUILD_PLAN.md` for the Pi, `MINI_PC_PL
 - One large plastic case with two compartments separated by a wall: a battery bay and an electronics bay.
 - All power stays inside the case, so the deck comes off the bag as one unit. No battery or power part lives in the bag.
 - Keep the electronics' exhaust path away from the battery bay.
+- Pointing device: trackball on the right side of the base with two mouse buttons beside it, clear of the keys. Thumb or finger placement is not decided.
 
 ## Battery bay
 

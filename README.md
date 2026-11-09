@@ -9,6 +9,16 @@ A portable, battery-powered cyberdeck for wireless capture, network security tes
 - Runs when closed, portable, and as cheap as possible
 - Fully authorized testing only: capture and test only networks I own or have written permission to test
 
+## Concept images
+
+Early concept drawings of the deck. They are close to the intended design, but the board, battery pack, and exact layout are not final.
+
+- `images/01-open.png`: the open deck (screen, keyboard, trackball on the right with two buttons, antennas, corner clips, end vent)
+- `images/02-inside-base.png`: top-down plan of the base (electronics bay, wall, battery bay)
+- `images/03-on-bag.png`: closed case clipped to a backpack with a backup strap
+
+The editable design canvas is "M.33 CyberDeck Concept" in Claude. The PNGs are renders of it and use a fallback font.
+
 ## Status and decisions
 
 Two builds are being developed in parallel while the choice is open. Options stay in the docs unless a decision is made to drop them.
@@ -23,7 +33,7 @@ Decisions so far:
 - Arduino and ESP32: ruled out as the main board because they can't run a desktop OS. An ESP32 may be a side tool.
 - Use case: car, bike, and backpack, not flying, so the 100 Wh airline battery cap does not apply. Battery target is about 150 to 200 Wh.
 - OptiPlex and Lenovo mini PCs need a battery that delivers 90 W or more.
-- Pointing device: try a cheap USB trackball first, with a small trackpad as the fallback. Both stay open.
+- Pointing device: try a cheap USB trackball first, with a small trackpad as the fallback. Both stay open. The trackball goes on the right side of the deck with two mouse buttons beside it, not in the middle. Still undecided: thumb or fingers.
 - Prices rose through 2026 because of the DRAM shortage. Older estimates in earlier versions were too low.
 
 ## Hardware plan (draft)
