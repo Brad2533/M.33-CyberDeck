@@ -9,7 +9,26 @@ A portable, battery-powered cyberdeck for wireless capture, network security tes
 - Runs when closed, portable, and as cheap as possible
 - Fully authorized testing only: capture and test only networks I own or have written permission to test
 
+## Status and decisions
+
+Two builds are being developed in parallel while the choice is open. Options stay in the docs unless a decision is made to drop them.
+
+- `BUILD_PLAN.md`: Raspberry Pi plan (headless capture hub with a Pi 4, or a laptop-style deck with a Pi 5 8 GB)
+- `MINI_PC_PLAN.md`: mini PC plan (new N150, or used OptiPlex 7xxx Micro and Lenovo ThinkCentre Tiny units)
+- `CASE_SPEC.md`: shared case design for car, bike, and backpack use
+
+Decisions so far:
+
+- Surface Pro: not used for the deck. Tearing it down is risky (glued screen and battery), so it is planned as a server instead.
+- Arduino and ESP32: ruled out as the main board because they can't run a desktop OS. An ESP32 may be a side tool.
+- Use case: car, bike, and backpack, not flying, so the 100 Wh airline battery cap does not apply. Battery target is about 150 to 200 Wh.
+- OptiPlex and Lenovo mini PCs need a battery that delivers 90 W or more.
+- Prices rose through 2026 because of the DRAM shortage. Older estimates in earlier versions were too low.
+
 ## Hardware plan (draft)
+
+This is the original draft. See the plan docs above for current options and prices.
+
 
 | Part | Choice | Est. cost |
 |---|---|---|

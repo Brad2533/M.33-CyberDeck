@@ -1,6 +1,6 @@
 # M.33 CyberDeck: Mini PC Build Plan
 
-As of 2026-11-09. Prices are approximate and change often. This is an alternative to the Raspberry Pi plan in `BUILD_PLAN.md`. Both are being kept current while the choice is made.
+As of 2026-11-09. Prices are approximate and change often. This is an alternative to the Raspberry Pi plan in `BUILD_PLAN.md`. Both are being kept current while the choice is made. A memory (DRAM) shortage raised mini PC and Pi prices through 2026, so older estimates in earlier versions of this plan were too low. Figures below were rechecked on 2026-11-09 where a source is noted.
 
 ## Overview
 
@@ -17,11 +17,13 @@ Options so far:
 
 | Class | Approx. cost | Power draw | Notes |
 | --- | --- | --- | --- |
-| Intel N100 | $120 to $160 | About 6 to 15 W | Enough for web, IDE, video, and Claude Code. Limited headroom. |
-| Intel N150 | $150 to $220 | About 6 to 15 W | Slightly faster than N100. Recommended starting point. |
-| AMD Ryzen 7 mini PC | $300 to $400 | Higher under load | Much more headroom. Heavier battery needed. |
+| Intel N100 | $120 to $160 (earlier estimate, not rechecked, likely higher) | About 6 to 15 W | Enough for web, IDE, video, and Claude Code. Limited headroom. |
+| Intel N150, new, 16 GB / 512 GB | $281 to $550, median $349 | About 6 to 15 W | Slightly faster than N100. Was about $158 in 2025. Barebone (no RAM or SSD) was $235. |
+| AMD Ryzen 7 8845HS mini PC | $829 to $939 with 32 GB / 1 TB, $349 to $383 barebone | Higher under load | Much more headroom. Heavier battery needed. |
 
-Decision needed: N150 for a first build, or a Ryzen model if you want headroom for heavier work.
+Source for the N150 and Ryzen figures: [Computing for Geeks](https://computingforgeeks.com/mini-pc-prices/), Amazon US prices pulled 2026-11-01.
+
+Decision needed: N150 for a first build, a used business mini PC (see below), or a Ryzen model if you want headroom for heavier work. Used units now cost less than new N150 boxes.
 
 Specs to check on any model:
 
@@ -62,7 +64,7 @@ The built-in Wi-Fi on most mini PCs will not do monitor mode, so an external USB
 
 | Option | Approx. cost | Notes |
 | --- | --- | --- |
-| Alfa AWUS036ACH or similar | $25 to $50 | Common choice for monitor mode and injection. |
+| Alfa AWUS036ACH or similar | $65 for the USB-C version ($25 to $50 was an earlier estimate) | Common choice for monitor mode and injection. Listing price from [Rokland](https://reach.dog/shop/rokland/products/alfa-awus036ach-usb-c-802-11ac-ac1200-dual-band-high-power-wifi-usb-adapter). |
 
 Decision needed: confirm the chipset supports monitor mode and packet injection on the chosen OS before buying. Only capture on networks you own or have written permission to test.
 
@@ -131,15 +133,20 @@ Open: which OS to install first.
 
 ## Budget
 
-Rough total: about $325 to $500, depending on the mini PC and battery. Prices are approximate.
+Rough subtotal before battery, case, and capture gear: about $300 to $390 with a used Lenovo M920q, or about $370 to $500 with a new N150 ($281 to $349 median range). Prices are approximate. Screen and keyboard figures are estimates, not priced listings.
 
 | Category | Approx. cost | Status |
 | --- | --- | --- |
-| Mini PC (N150, 16 GB, 256 GB+) | $150 to $220 | Recommended, not picked |
+| Mini PC, new N150 (16 GB, 512 GB) | $281 to $550, median $349 | Options, not picked |
+| Mini PC, used Lenovo M920q | $210 to $240 | Option, not picked |
+| Mini PC, used OptiPlex 7070 Micro | $237 to $252 | Option, not picked |
+| Mini PC, used OptiPlex 7080 Micro | About $296 | Option, not picked |
+| Mini PC, used Lenovo M90q Gen 1 | $300 to $350 | Option, not picked |
+| Mini PC, used Lenovo M720q (32 GB) | About $363 | Option, not picked |
 | Screen | $60 to $90 | Not picked |
 | Keyboard and touchpad | $30 to $60 | Not picked |
-| Battery with DC output | $50 to $100 | Not picked |
-| Capture adapter and hub (optional) | $35 to $65 | Only if capture is needed |
+| Battery with DC output, 150 to 200 Wh, 90 W+ | Not priced. The earlier $50 to $100 estimate is likely too low. | Not picked |
+| Capture adapter and hub (optional) | Adapter about $65, plus hub $10 to $15 | Only if capture is needed |
 | Case | TBD | Not chosen |
 
 ## Open decisions
