@@ -58,6 +58,15 @@ Dell OptiPlex 7xxx Micro and Lenovo ThinkCentre Tiny units are strong enough for
 
 Decision needed: pick a model (cheapest of these: Lenovo M920q; more headroom: OptiPlex 7080 Micro).
 
+**Board-only build (decided)**
+
+The mini PC's shell will not be kept. Only its insides are used as parts: the motherboard with its heatsink and fan, plus the RAM and SSD. This is a big part of the fun of the build, and it is why thickness matters so much.
+
+- Keep the original heatsink and fan, since they are designed for the board. Plan an air path from an intake to the fan and out an exhaust vent, because the stock shell used to provide that duct.
+- The rear I/O ports (USB, Ethernet, HDMI, power jack) sit on the board edge, so cut openings in the case to reach them, or use short extension cables to a panel.
+- Check teardown photos for the chosen model before buying: board size, height with cooler, port positions, and whether the power jack and any adapter ID signal can be reused. I haven't verified these figures.
+- Thin, bare boards can sit in a rear strip behind the keyboard, which keeps heat out from under the hands.
+
 ## Wireless capture
 
 The built-in Wi-Fi on most mini PCs will not do monitor mode, so an external USB adapter is still needed for capture.

@@ -13,6 +13,10 @@ As of 2026-11-09. Shared by both builds (`BUILD_PLAN.md` for the Pi, `MINI_PC_PL
 - One large plastic case with two compartments separated by a wall: a battery bay and an electronics bay.
 - All power stays inside the case, so the deck comes off the bag as one unit. No battery or power part lives in the bag.
 - Keep the electronics' exhaust path away from the battery bay.
+- Mini PC build uses the bare board: the mini PC shell is removed and only the board, heatsink, fan, RAM and SSD are used. Mount the board on standoffs in a rear strip behind the keyboard, with the exhaust at the back.
+- Heat: spread it out. Keep the main heat behind the keys, add an air gap and heat shield under the keyboard, and keep the converter and USB hub away from the board.
+- Strip the case's foam. Use rigid mounts only, and no foam near heat or the battery.
+- Orientation on the bag: the lid's outside faces out and the right side (trackball side) faces up, so the back vents point out to the wearer's left.
 - Pointing device: trackball on the right side of the base with two mouse buttons beside it, clear of the keys. Thumb or finger placement is not decided.
 
 ## Battery bay

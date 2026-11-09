@@ -33,6 +33,7 @@ Decisions so far:
 - Arduino and ESP32: ruled out as the main board because they can't run a desktop OS. An ESP32 may be a side tool.
 - Use case: car, bike, and backpack, not flying, so the 100 Wh airline battery cap does not apply. Battery target is about 150 to 200 Wh.
 - OptiPlex and Lenovo mini PCs need a battery that delivers 90 W or more.
+- Mini PC build: the shell is removed and only the board, heatsink, fan, RAM and SSD are used. Case thinness matters, and the case needs to be easy to cut.
 - Pointing device: try a cheap USB trackball first, with a small trackpad as the fallback. Both stay open. The trackball goes on the right side of the deck with two mouse buttons beside it, not in the middle. Still undecided: thumb or fingers.
 - Prices rose through 2026 because of the DRAM shortage. Older estimates in earlier versions were too low.
 
