@@ -59,6 +59,19 @@ Open: which legacy interfaces (serial, JTAG, other) you actually need first, so 
 
 Open: screen size and whether the keyboard sits inside the case or on top.
 
+## Peripherals
+
+**Pointing device (built-in mouse)**
+
+Decision so far: try a cheap USB trackball first, and fall back to a small trackpad if it doesn't work out. Both options stay open. Both connect over USB, so either one swaps in without changing the rest of the build.
+
+| Option | Reliability | Notes |
+| --- | --- | --- |
+| Trackball (optical) | Rugged. Works with gloves or damp hands and holds still on bumpy surfaces. Needs occasional cleaning if grit gets under the ball. | Preferred to try first for bike, car, and outdoor use. Takes a few days to learn. Cover or recess the ball to keep dirt out. |
+| Trackpad | No moving parts, so mechanically reliable. Can misbehave with wet or sweaty fingers or gloves, and a loose mount or electrical noise can cause jumpy cursors. | Familiar and supports gestures. Needs a flat, exposed surface in the case. |
+
+Prices not checked yet. The earlier estimate of $10 to $25 still applies.
+
 ## Power
 
 The battery is the riskiest part of this build. Options so far:
@@ -149,6 +162,7 @@ Online print services such as JLCPCB or Craftcloud can print test parts for a fe
 - [ ] Headless capture hub (Pi 4) or laptop-style deck (Pi 5 8 GB)
 - [ ] Confirm the US price of the Pi 5 8 GB
 - [ ] Screen, keyboard, and touchpad choice for the laptop-style deck
+- [ ] Pointing device: try a cheap USB trackball first, fall back to a trackpad
 - [ ] Battery pack: choose capacity from target runtime and check its watt-hour rating
 - [ ] Cooling: fan or passive heatsink, and vent layout
 - [ ] Enclosure: choose the shell and confirm it fits the Pi, hub, and battery

@@ -88,6 +88,19 @@ Open: which legacy interfaces (serial, JTAG, other) you actually need first.
 
 Open: screen size and whether the keyboard sits inside the case or on top.
 
+## Peripherals
+
+**Pointing device (built-in mouse)**
+
+Decision so far: try a cheap USB trackball first, and fall back to a small trackpad if it doesn't work out. Both options stay open. Both connect over USB, so either one swaps in without changing the rest of the build.
+
+| Option | Reliability | Notes |
+| --- | --- | --- |
+| Trackball (optical) | Rugged. Works with gloves or damp hands and holds still on bumpy surfaces. Needs occasional cleaning if grit gets under the ball. | Preferred to try first for bike, car, and outdoor use. Takes a few days to learn. Cover or recess the ball to keep dirt out. |
+| Trackpad | No moving parts, so mechanically reliable. Can misbehave with wet or sweaty fingers or gloves, and a loose mount or electrical noise can cause jumpy cursors. | Familiar and supports gestures. Needs a flat, exposed surface in the case. |
+
+Prices not checked yet. The earlier estimate of $10 to $25 still applies.
+
 ## Power
 
 Most mini PCs take 12 V or 19 V DC, not USB-C power, so a standard power bank may not work.
@@ -157,6 +170,7 @@ Rough subtotal before battery, case, and capture gear: about $300 to $390 with a
 - [ ] RAM: 16 GB recommended
 - [ ] Screen size and layout
 - [ ] Keyboard and touchpad choice
+- [ ] Pointing device: try a cheap USB trackball first, fall back to a trackpad
 - [ ] Battery pack: output voltage, capacity, and watt-hour rating
 - [ ] Cooling: fan layout and vent positions
 - [ ] Case: rugged shell, printed case, or existing cyberdeck design
