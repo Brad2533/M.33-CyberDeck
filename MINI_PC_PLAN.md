@@ -125,6 +125,16 @@ Target runtime: about 3 to 6 hours with the screen on and mixed use. Battery pac
 
 Open: pack capacity and output voltage, once the mini PC model is picked.
 
+## Switch cluster (power and pass-through modes)
+
+Idea under consideration: three guarded toggle switches (race-car style, with a flip cover) in a row above the trackpad. Not decided yet.
+
+1. **PC power:** a toggle in the DC feed to the board. At 90 W and 19 V that is about 5 A, so the switch needs a DC rating above that. It is a hard cut, not a clean shutdown. Set the BIOS to power on after power loss, so flipping it on boots the board.
+2. **Screen power:** cuts the screen's power line. A 10 in panel draws roughly 3 to 4 W, so it saves about 15 to 25% on headless jobs. These figures are estimates.
+3. **Pass-through mode:** the deck acts as the screen, keyboard and trackpad for another computer (a Pi or a laptop) while the internal board is off. Easiest build: a screen with a second input (HDMI plus USB-C) that switches automatically, a small USB switch (2 in, 1 out) for the keyboard and trackpad, and an HDMI-in and a USB host port on the case panel. Most USB switches use a momentary button, so a latching toggle needs a small relay or a switch with a hardware selector.
+
+Power wiring: the screen and the USB switch must stay powered with the PC switch off. Feed them from the main battery before the PC switch, through an inline fuse and the screen switch. If the pack has a spare USB-C port, plug them into that. If the pack has only a 19 V DC output, add a small step-down converter to 5 V or a PD trigger module. Battery requirement: two outputs usable at once (high-power for the board, always-on USB-C for the screen). Check that the pack does not split its wattage between ports or turn off a port under a small load.
+
 ## Cooling
 
 - A mini PC's fan needs clear airflow. Plan vents on both intake and exhaust sides.
@@ -189,6 +199,9 @@ Rough subtotal before battery, case, and capture gear: about $300 to $390 with a
 - [ ] Monitor-mode adapter: pick a model and confirm its chipset supports monitor mode and injection
 - [ ] OS: Ubuntu, Kali, or Windows
 - [ ] Thermal test with the lid closed
+- [ ] Switch cluster: confirm it fits above the trackpad, and pick guarded toggles with a DC rating that covers the board's current
+- [ ] Pass-through mode: screen with a second input and auto-switching, plus a USB switch for the keyboard and trackpad
+- [ ] Battery with two outputs at once: a high-power one for the board and an always-on USB-C one for the screen and USB switch
 
 ## Safety and legal
 

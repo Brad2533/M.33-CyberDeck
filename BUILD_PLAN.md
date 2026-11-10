@@ -86,6 +86,16 @@ The battery is the riskiest part of this build. Options so far:
 
 Open: target runtime (hours with the lid closed), which decides the pack's watt-hour size. Battery pack and capacity are not yet chosen.
 
+## Switch cluster (power and pass-through modes)
+
+Idea under consideration: three guarded toggle switches (race-car style, with a flip cover) in a row above the trackpad. Not decided yet.
+
+1. **Pi power:** a toggle in the 5 V feed. A Pi 5 needs 5 V at 5 A, so the switch needs a DC rating above that, with a fuse and short thick wires. A Pi starts when power returns. Cutting power on a running Pi risks corrupting the SD card, so shut down first or use an NVMe drive with a journaling filesystem.
+2. **Screen power:** cuts the screen's power line. A 10 in panel draws roughly 3 to 4 W, which is large next to a Pi's 2 to 12 W, so it matters most here. These figures are estimates.
+3. **Pass-through mode:** the deck acts as the screen, keyboard and trackpad for another computer (a laptop or a second Pi) while the Pi is off. Easiest build: a screen with a second input (HDMI plus USB-C) that switches automatically, a small USB switch (2 in, 1 out) for the keyboard and trackpad, and an HDMI-in and a USB host port on the case panel. Most USB switches use a momentary button, so a latching toggle needs a small relay or a switch with a hardware selector.
+
+Power wiring: the screen and the USB switch must stay powered with the Pi switch off. Feed them from the main battery before the Pi switch, through an inline fuse and the screen switch. A power bank with two USB-C ports can do this directly. Battery requirement: two outputs usable at once (5 V at 5 A for the Pi, plus an always-on USB-C for the screen), and check that the pack does not split its wattage between ports or turn off a port under a small load.
+
 ## Cooling
 
 A sealed case traps heat from the board and the battery. Venting only the battery is not enough.
@@ -173,6 +183,9 @@ Online print services such as JLCPCB or Craftcloud can print test parts for a fe
 - [ ] Printer: self-print or use an online service for test parts
 - [ ] Thermal test with the lid closed
 - [ ] Target runtime, which drives battery size
+- [ ] Switch cluster: confirm it fits above the trackpad, and pick guarded toggles with a DC rating that covers the board's current
+- [ ] Pass-through mode: screen with a second input and auto-switching, plus a USB switch for the keyboard and trackpad
+- [ ] Battery with two outputs at once: a high-power one for the board and an always-on USB-C one for the screen and USB switch
 
 ## Safety and legal
 

@@ -49,6 +49,14 @@ Plan: buy an Apache 3800 as a practice case for test cuts, then move to a used P
 
 Estimated 9 to 13 lb for a mini PC build in a large case, 6 to 8 lb for a Pi 5 with a smaller battery. These are estimates, not measurements.
 
+## Switch cluster
+
+Idea under consideration, not decided. Three guarded toggles (flip-cover, race-car style) in a row above the trackpad: board power, screen power, and a pass-through mode where the deck is the screen and keyboard for another computer. Details are in `BUILD_PLAN.md` and `MINI_PC_PLAN.md`.
+
+- Space: a row of three is about 2.5 to 3 in wide and about 1.2 in deep. The right-hand zone is about 3.5 in wide, and the front row is about 4 in deep, so it is tight with a small trackpad on the Pelican 1470. If it does not fit, put it beside the buttons or at the left end by the ports.
+- Case panel: pass-through mode needs an HDMI-in port and a USB host port, with locking connectors like the others.
+- Battery: needs two outputs usable at once, one high-power for the board and one always-on for the screen and USB switch.
+
 ## Battery bay
 
 - **Capacity:** target about 150 to 200 Wh. That is roughly 6 to 9 hours at a 20 W average and about 1.2 to 2 kg. Larger packs add weight and stored energy without much benefit.
@@ -104,3 +112,4 @@ Estimated 9 to 13 lb for a mini PC build in a large case, 6 to 8 lb for a Pi 5 w
 - [ ] Vent: membrane vent model and location
 - [ ] Mounts: clip model and reinforcement plan
 - [ ] Antenna layout: which are external and where the connectors sit
+- [ ] Switch cluster: does it fit above the trackpad, and do the switches carry the board's DC current
