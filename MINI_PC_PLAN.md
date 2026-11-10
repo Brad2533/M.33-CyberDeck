@@ -159,6 +159,15 @@ Open: pick the case after the mini PC and screen sizes are fixed. Check the larg
 
 Detailed case design (two compartments, battery bay, vent and fan, mounting, antennas): see [CASE_SPEC.md](CASE_SPEC.md).
 
+## Soldering
+
+The plan can be built with little or no soldering if parts are chosen with connectors. Rule when picking parts: prefer screw-terminal, quick-connect (spade) or push-on versions.
+
+- No soldering: finished battery pack with BMS, bare board with RAM and SSD, hot-swap keyboard, USB trackpad, USB switch, hub and capture adapter, premade RP-SMA pigtails and bulkheads, panel-mount USB-C extension cable.
+- Possible soldering, with a no-solder alternative: toggle switches (choose screw or spade terminals), the DC power feed (screw-terminal barrel plug, or ferrules and lever connectors), fuse holders and the 5 V converter or PD trigger (use the screw terminals), the shutdown button (Dupont or JST push-on leads to the board's power-button header), and the pass-through relay (use a module with screw terminals).
+- Likely need soldering: bare pads on a board with no power-button pins, and joints on coax.
+- Tools: crimp tool, spade terminals and ferrules, heat shrink. A small soldering iron is still worth keeping.
+
 ## Software
 
 - **OS:** Ubuntu or Kali Linux for security tooling, or Windows if you want to run Windows-only apps.

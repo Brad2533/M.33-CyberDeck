@@ -99,6 +99,10 @@ Idea under consideration, not decided. Three guarded toggles (flip-cover, race-c
 - **Mini PC (OptiPlex or Lenovo):** the battery bay must deliver 90 W or more, matching the model's adapter. See `MINI_PC_PLAN.md`.
 - **Pi 5:** 5 V at 5 A, so the pack needs a USB-C PD output that supplies that.
 
+## Soldering
+
+Prefer screw-terminal, spade or push-on parts so little or no soldering is needed. See the plan docs for the list.
+
 ## Weather and heat
 
 - Resistant, not waterproof, is the goal. Vents use membranes or hooded openings.
