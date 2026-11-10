@@ -35,7 +35,7 @@ Decisions so far:
 - OptiPlex and Lenovo mini PCs need a battery that delivers 90 W or more.
 - Mini PC build: the shell is removed and only the board, heatsink, fan, RAM and SSD are used. Case thinness matters, and the case needs to be easy to cut.
 - Pointing device: a small USB trackpad on the right side with two mouse buttons beside it, with a cheap USB trackball as the fallback. The deck only travels through rain closed, so the trackpad is sealed in. The keyboard is a wired USB 60% board in a replaceable top plate.
-- Idea under consideration: three guarded toggle switches above the trackpad for board power, screen power, and a pass-through mode that makes the deck the screen and keyboard for another computer. The battery needs two outputs usable at once. See the plan docs.
+- Idea under consideration: three guarded toggle switches above the trackpad for board power, screen power, and a pass-through mode that makes the deck the screen and keyboard for another computer, plus a separate shutdown button (hidden or big red). The battery needs two outputs usable at once. See the plan docs.
 - Prices rose through 2026 because of the DRAM shortage. Older estimates in earlier versions were too low.
 
 ## Hardware plan (draft)
