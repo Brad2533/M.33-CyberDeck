@@ -86,3 +86,9 @@ Rough starting total: about $90 to $130 (Pi 4, monitor-mode adapter, hub).
 - [ ] Find or design the cyberdeck case (Printables / Thingiverse), and check the largest part against printer bed size
 - [ ] Pick a printer if self-printing (budget options around $200 to $300)
 - [ ] Thermal test with the lid closed
+
+## License
+
+© 2026 Brad2533. This design is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). See [LICENSE](LICENSE).
+
+You may build, share, and modify it for personal, non-commercial use, as long as you give credit and share your changes under the same license. **You may not sell this design, or builds or kits based on it, or use it for any commercial purpose** without written permission.
