@@ -1,0 +1,126 @@
+newmtl m_shell_base_0
+Kd 0.230 0.260 0.310
+
+newmtl m_shell_base_1
+Kd 0.230 0.260 0.310
+
+newmtl m_shell_base_2
+Kd 0.230 0.260 0.310
+
+newmtl m_shell_base_3
+Kd 0.230 0.260 0.310
+
+newmtl m_shell_base_4
+Kd 0.230 0.260 0.310
+
+newmtl m_shell_lid_0
+Kd 0.230 0.260 0.310
+
+newmtl m_shell_lid_1
+Kd 0.230 0.260 0.310
+
+newmtl m_shell_lid_2
+Kd 0.230 0.260 0.310
+
+newmtl m_shell_lid_3
+Kd 0.230 0.260 0.310
+
+newmtl m_shell_lid_4
+Kd 0.230 0.260 0.310
+
+newmtl m_vent_exhaust
+Kd 0.560 0.780 0.750
+
+newmtl m_vent_membrane
+Kd 0.890 0.540 0.230
+
+newmtl m_port_panel
+Kd 0.550 0.600 0.660
+
+newmtl m_clip_bl
+Kd 0.780 0.800 0.840
+
+newmtl m_clip_br
+Kd 0.780 0.800 0.840
+
+newmtl m_clip_fl
+Kd 0.780 0.800 0.840
+
+newmtl m_clip_fr
+Kd 0.780 0.800 0.840
+
+newmtl m_latch_l_base
+Kd 0.160 0.190 0.220
+
+newmtl m_latch_r_base
+Kd 0.160 0.190 0.220
+
+newmtl m_sma_1
+Kd 0.550 0.590 0.640
+
+newmtl m_ant_1
+Kd 0.160 0.190 0.220
+
+newmtl m_sma_2
+Kd 0.550 0.590 0.640
+
+newmtl m_ant_2
+Kd 0.160 0.190 0.220
+
+newmtl m_latch_l_lid
+Kd 0.160 0.190 0.220
+
+newmtl m_latch_r_lid
+Kd 0.160 0.190 0.220
+
+newmtl m_board
+Kd 0.120 0.500 0.480
+
+newmtl m_batt
+Kd 0.890 0.540 0.230
+
+newmtl m_wall
+Kd 0.100 0.110 0.130
+
+newmtl m_conv
+Kd 0.450 0.620 0.300
+
+newmtl m_sbtn
+Kd 0.840 0.200 0.200
+
+newmtl m_alfa
+Kd 0.200 0.330 0.620
+
+newmtl m_hub
+Kd 0.350 0.420 0.720
+
+newmtl m_usw
+Kd 0.500 0.400 0.700
+
+newmtl m_plate
+Kd 0.300 0.350 0.420
+
+newmtl m_kb
+Kd 0.400 0.460 0.540
+
+newmtl m_t1
+Kd 0.800 0.220 0.220
+
+newmtl m_t2
+Kd 0.800 0.220 0.220
+
+newmtl m_t3
+Kd 0.800 0.220 0.220
+
+newmtl m_pad
+Kd 0.130 0.160 0.200
+
+newmtl m_b1
+Kd 0.200 0.240 0.290
+
+newmtl m_b2
+Kd 0.200 0.240 0.290
+
+newmtl m_scr
+Kd 0.060 0.090 0.110
+

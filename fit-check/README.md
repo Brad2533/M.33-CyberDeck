@@ -10,3 +10,4 @@
 - The fit check runs with the lid closed. Its results are written to the `#summary` and `#issues` elements, so a headless browser (Playwright, Chromium with SwiftShader) can load the page and read them.
 - Edits made in the browser are not saved. To change the model, edit the numbers in `index.html` and commit.
 - Only the case sizes come from listings. Board, battery, keyboard, trackpad, toggle and adapter sizes are estimates until measured.
+- CAD exports: run `python3 fit-check/export_cad.py` after changing numbers here. It reads this file and rewrites `cad/` (OpenSCAD, OBJ, STL).
