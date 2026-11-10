@@ -19,6 +19,10 @@ Early concept drawings of the deck. They are close to the intended design, but t
 
 The editable design canvas is "M.33 CyberDeck Concept" in Claude. The PNGs are renders of it and use a fallback font.
 
+## 3D fit check
+
+`fit-check/index.html` is a movable 3D model of the deck. Open it in a browser to rotate it, open and close the lid, view each face, and edit part sizes and positions. It flags parts that collide or do not fit, tested with the lid closed. Sizes are approximate and based on the Pelican 1470. The board, battery, keyboard, trackpad, switch and adapter sizes are estimates, not measured parts. The charging port is left out because its position is not decided.
+
 ## Status and decisions
 
 Two builds are being developed in parallel while the choice is open. Options stay in the docs unless a decision is made to drop them.
