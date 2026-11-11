@@ -23,6 +23,10 @@ The editable design canvas is "M.33 CyberDeck Concept" in Claude. The PNGs are r
 
 `fit-check/index.html` is a movable 3D model of the deck. Open it in a browser to rotate it, open and close the lid, view each face, and edit part sizes and positions. It flags parts that collide or do not fit, tested with the lid closed. CAD exports of the same model (OpenSCAD, OBJ with colours, and STL) are in `cad/`, made by `fit-check/export_cad.py`. Sizes are approximate and based on the Pelican 1470. The board, battery, keyboard, trackpad, switch and adapter sizes are estimates, not measured parts. The charging port is left out because its position is not decided.
 
+## Exterior model
+
+`exterior-model/index.html` is a separate, lifelike 3D model of the outside of the deck, with opaque panels. Open it in a browser to rotate it, open and close the lid, and view each face. It is for looks only: sizes follow the Pelican 1470 and the planned layout, but colours, key shapes, latches, vents and port order are illustrative. It has no inside parts. Use `fit-check/` for fit.
+
 ## Status and decisions
 
 Two builds are being developed in parallel while the choice is open. Options stay in the docs unless a decision is made to drop them.
