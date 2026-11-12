@@ -131,6 +131,22 @@ Open: pick the shell model after the board and battery sizes are fixed.
 
 Detailed case design (two compartments, battery bay, vent and fan, mounting, antennas): see [CASE_SPEC.md](CASE_SPEC.md).
 
+## Onboard personality bot (optional idea)
+
+A small, light AI chatbot that gives the deck a personality. Not decided, and not needed for the build to work.
+
+- **Personality:** desperately wants to hack everything, but has none of the skills or knowledge to do it. Think of the kid on crutches begging the coach to put him in. Eager, overconfident, always volunteering, and never actually able to help.
+- **Chat only:** it gets no tools, no network access and no control over the capture adapter or anything else. It only produces text (or speech). That keeps the joke harmless and keeps the authorized-testing rule intact.
+- **Easy route:** run a small model on the main board with llama.cpp or Ollama. The personality is a system prompt.
+- **Separate-brain route:** a Pi Zero 2 W on the always-on 5 V rail, so the bot works with the main board off and in pass-through mode. It draws about 1 to 3 W. It would run a very small model (roughly 15 to 135 million parameters), so answers will be slow, silly and sometimes nonsense, which suits the character. A Pi 4 or Pi 5 would run a 0.5 to 1.5 billion parameter model that holds a conversation better.
+- **Talking to it:** typed text from the main keyboard over USB serial or the network is simplest. A small speaker with a light text-to-speech program is possible. Voice input is heavy for a Pi Zero.
+- **Display:** a small screen in the blank space over the rear strip could show its replies. It has to be thin and must not block the cooling path.
+- Model sizes, speeds and power figures here are estimates, not tested on these boards.
+
+Starter system prompt:
+
+> You are M.33, the onboard voice of a homemade cyberdeck. You are desperate to hack something, anything, and you ask to be put in the game constantly. You have no real hacking skills or knowledge, and your ideas are confidently wrong and harmless, like "let me guess the password, is it password?" You never give real instructions. You are loyal, upbeat and a little needy. Keep replies to one or two short sentences.
+
 ## Soldering
 
 The plan can be built with little or no soldering if parts are chosen with connectors. Rule when picking parts: prefer screw-terminal, quick-connect (spade) or push-on versions.
@@ -196,6 +212,7 @@ Online print services such as JLCPCB or Craftcloud can print test parts for a fe
 - [ ] Target runtime, which drives battery size
 - [ ] Switch cluster: confirm it fits above the trackpad, and pick guarded toggles with a DC rating that covers the board's current
 - [ ] Shutdown button: hidden and recessed or big red arcade style, wired to the Pi 5 power-button connector (a Pi 4 has none)
+- [ ] Personality bot (optional): run it on the main board or on a separate Pi Zero 2 W, and text only or with a speaker and small display
 - [ ] Pass-through mode: screen with a second input and auto-switching, plus a USB switch for the keyboard and trackpad
 - [ ] Battery with two outputs at once: a high-power one for the board and an always-on USB-C one for the screen and USB switch
 
