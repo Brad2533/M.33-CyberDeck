@@ -143,6 +143,20 @@ A small, light AI chatbot that gives the deck a personality. Not decided, and no
 - **Display:** a small screen in the blank space over the rear strip could show its replies. It has to be thin and must not block the cooling path.
 - Model sizes, speeds and power figures here are estimates, not tested on these boards.
 
+**One-way feed (so the bot can react to the screen without any control)**
+
+The bot runs on a separate Pi and only listens. Nothing runs back from it to the main board.
+
+- **Sender on the main board:** a small background script writes short text lines to a serial port: the active window title when it changes, the name of each command run (from the shell's pre-command hook), and optional system events such as a USB device plugged in or a capture started. A tiny command also lets you type a message to the bot through the same port.
+- **Wire:** serial, with only the main board's transmit pin and ground connected to the Pi's receive pin. There is no return wire, so the Pi has no path to send anything back. A Pi 5 main board can use its built-in serial transmit pin.
+- **Isolation:** the Pi gets power only from the always-on rail. No USB data cable to the main board, no Ethernet, and no connection to the keyboard, trackpad or capture adapter. Wi-Fi and Bluetooth are turned off in its boot config, and it is never given network credentials.
+- **Receiver on the Pi:** a script reads the lines, keeps the last few as context, builds a prompt (personality, recent events, "react in one sentence"), runs the model, and prints the reply to its own screen. A rate limit keeps it from reacting to everything.
+- **What gets sent:** window titles and command names only, not full terminal output, so passwords and capture contents never go down the wire. The filtering lives in the sender.
+- **Display system:** reading the active window is easy on X11. On Wayland it depends on the desktop, so check this when picking the Linux distribution.
+- **Screen for replies:** small OLED (about 0.03 to 0.06 W), wide 256 x 64 OLED (about 0.3 to 0.8 W), or e-ink (near zero while static). All are small next to the Pi's 1 to 3 W. Estimates, not datasheet values.
+- **Real video instead of text (not planned):** an HDMI splitter and capture dongle would let the Pi see the actual picture, including in pass-through mode, but reading it needs text recognition or a vision model, which is too heavy for a Pi Zero.
+- A very small model will react loosely to keywords, not understand what it sees.
+
 Starter system prompt:
 
 > You are M.33, the onboard voice of a homemade cyberdeck. You are desperate to hack something, anything, and you ask to be put in the game constantly. You have no real hacking skills or knowledge, and your ideas are confidently wrong and harmless, like "let me guess the password, is it password?" You never give real instructions. You are loyal, upbeat and a little needy. Keep replies to one or two short sentences.
@@ -212,7 +226,7 @@ Online print services such as JLCPCB or Craftcloud can print test parts for a fe
 - [ ] Target runtime, which drives battery size
 - [ ] Switch cluster: confirm it fits above the trackpad, and pick guarded toggles with a DC rating that covers the board's current
 - [ ] Shutdown button: hidden and recessed or big red arcade style, wired to the Pi 5 power-button connector (a Pi 4 has none)
-- [ ] Personality bot (optional): run it on the main board or on a separate Pi Zero 2 W, and text only or with a speaker and small display
+- [ ] Personality bot (optional): separate Pi with a one-way serial feed is the preferred design. Still open: which Pi, which model, and which reply screen
 - [ ] Pass-through mode: screen with a second input and auto-switching, plus a USB switch for the keyboard and trackpad
 - [ ] Battery with two outputs at once: a high-power one for the board and an always-on USB-C one for the screen and USB switch
 
