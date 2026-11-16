@@ -7,7 +7,7 @@ As of 2026-11-09. Prices are approximate and change often. This is an alternativ
 A portable, cyberdeck-style computer built around a mini PC. It runs a full desktop for web, IDE, video, and Claude Code, and it can be used for wireless capture and homelab work when needed. The build itself is part of the goal, so the case and layout matter as much as the specs.
 
 - Full desktop for web, IDE, YouTube, and Claude Code
-- Wireless capture in monitor mode for authorized homelab testing, through a USB adapter
+- Wired, connected Wi-Fi, Bluetooth, and passive proximity testing for authorized homelab work, with a USB adapter for monitor mode
 - Portable, with a screen, keyboard, and battery in one case
 - Looks like a cyberdeck, and is built by hand
 
@@ -67,6 +67,19 @@ The mini PC's shell will not be kept. Only its insides are used as parts: the mo
 - Check teardown photos for the chosen model before buying: board size, height with cooler, port positions, and whether the power jack and any adapter ID signal can be reused. I haven't verified these figures.
 - Thin, bare boards can sit in a rear strip behind the keyboard, which keeps heat out from under the hands.
 
+## Testing modes
+
+Each way of reaching a network needs its own hardware. This table tracks what the build covers.
+
+| Mode | What it needs | Status |
+| --- | --- | --- |
+| Wired (physical connection) | The board's onboard Ethernet port (2.5 GbE preferred). A USB Ethernet adapter as backup. | Covered by the board. Confirm the port on the chosen model. |
+| Connected Wi-Fi | The board's onboard Wi-Fi. | Covered. Confirm 5 GHz support on the chosen model. |
+| Monitor-mode Wi-Fi capture | A USB adapter with monitor mode and injection. | Covered by the adapter below. Chipset still needs checking. |
+| Bluetooth and BLE | Onboard Bluetooth, or a USB Bluetooth adapter. | Not in the plan before this revision. Confirm the chosen model. |
+| Passive proximity scanning | Kismet, running on the same Wi-Fi and Bluetooth adapters. | Software was not in the plan before this revision. |
+| Other radios (optional) | A low-cost RTL-SDR dongle. | Optional, not planned. |
+
 ## Wireless capture
 
 The built-in Wi-Fi on most mini PCs will not do monitor mode, so an external USB adapter is still needed for capture.
@@ -75,7 +88,7 @@ The built-in Wi-Fi on most mini PCs will not do monitor mode, so an external USB
 | --- | --- | --- |
 | Alfa AWUS036ACH or similar | $65 for the USB-C version ($25 to $50 was an earlier estimate) | Common choice for monitor mode and injection. Listing price from [Rokland](https://reach.dog/shop/rokland/products/alfa-awus036ach-usb-c-802-11ac-ac1200-dual-band-high-power-wifi-usb-adapter). |
 
-Decision needed: confirm the chipset supports monitor mode and packet injection on the chosen OS before buying. Only capture on networks you own or have written permission to test.
+Decision needed: confirm the chipset supports monitor mode and packet injection on the chosen OS before buying. Pick a dual-band adapter (2.4 and 5 GHz), since the home network uses 5 GHz. Only capture on networks you own or have written permission to test.
 
 ## Ports and I/O
 
@@ -84,6 +97,7 @@ Mini PCs usually cover most ports directly, so a hub may not be needed.
 - Check the number of USB-A ports before buying a hub.
 - USB-to-serial adapters, about $5 to $10 each, for serial and console work.
 - Confirm the model has the video output you need for the screen.
+- Ethernet: use the board's onboard port for wired testing (2.5 GbE preferred), with a USB Ethernet adapter as backup.
 
 Open: which legacy interfaces (serial, JTAG, other) you actually need first.
 
@@ -201,7 +215,9 @@ The plan can be built with little or no soldering if parts are chosen with conne
 ## Software
 
 - **OS:** Linux (decided). The distribution is not picked yet: Ubuntu or Kali Linux are the options so far. Windows was considered and dropped.
-- **Capture tools:** Wireshark and tcpdump.
+- **Capture tools:** Wireshark and tcpdump, plus Kismet for passive Wi-Fi and Bluetooth scanning.
+- **Testing tools:** nmap, ssh-audit, Lynis, Greenbone/OpenVAS, and OWASP ZAP, used only against hosts you own. A WireGuard client reaches the home network from outside.
+- **Bluetooth tools:** bluetoothctl and btmon, which come with BlueZ on most Linux distributions.
 - **Development:** Claude Code runs in a terminal. The model runs on Anthropic's servers, so the mini PC only needs to run the client.
 
 Open: which Linux distribution to install.
@@ -221,7 +237,9 @@ Rough subtotal before battery, case, and capture gear: about $300 to $390 with a
 | Screen | $60 to $90 | Not picked |
 | Keyboard and touchpad | $30 to $60 | Not picked |
 | Battery with DC output, 150 to 200 Wh, 90 W+ | Not priced. The earlier $50 to $100 estimate is likely too low. | Not picked |
-| Capture adapter and hub (optional) | Adapter about $65, plus hub $10 to $15 | Only if capture is needed |
+| Capture adapter and hub | Adapter about $65, plus hub $10 to $15 | Required for monitor mode and proximity scanning |
+| Bluetooth USB adapter | Not priced | Only if the chosen model has no onboard Bluetooth |
+| RTL-SDR dongle (optional) | Not priced | For other radios, not planned |
 | Case | TBD | Not chosen |
 
 ## Open decisions
@@ -237,7 +255,11 @@ Rough subtotal before battery, case, and capture gear: about $300 to $390 with a
 - [ ] Battery pack: output voltage, capacity, and watt-hour rating
 - [ ] Cooling: fan layout and vent positions
 - [ ] Case: rugged shell, printed case, or existing cyberdeck design
-- [ ] Monitor-mode adapter: pick a model and confirm its chipset supports monitor mode and injection
+- [ ] Monitor-mode adapter: pick a dual-band model and confirm its chipset supports monitor mode and injection
+- [ ] Wired port: confirm the chosen model's onboard Ethernet (2.5 GbE preferred), with a USB Ethernet adapter as backup
+- [ ] Bluetooth: confirm the chosen model has it, or buy a USB Bluetooth adapter
+- [ ] Kismet and Bluetooth tools: install and test on the chosen Linux distribution
+- [ ] Optional: RTL-SDR dongle for other radios
 - [ ] OS: which Linux distribution (Ubuntu, Kali, or another)
 - [ ] Thermal test with the lid closed
 - [ ] Switch cluster: confirm it fits above the trackpad, and pick guarded toggles with a DC rating that covers the board's current
